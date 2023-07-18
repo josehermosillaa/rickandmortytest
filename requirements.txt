@@ -13,10 +13,12 @@ Django==4.2.2
 django-bootstrap-v5==1.0.11
 django-crispy-forms==2.0
 executing==1.2.0
+gunicorn==21.1.0
 idna==3.4
 ipython==8.14.0
 jedi==0.18.2
 matplotlib-inline==0.1.6
+packaging==23.1
 parso==0.8.3
 pickleshare==0.7.5
 prompt-toolkit==3.0.38
