@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<div class="row"><h1 class="text-center m-3">Personajes Rick and Morty</h1></div>
+<div class="row mx-5">
+    {% for personaje in personajes %}
+        <div class="card m-3" style="width: 18rem;">
+            <img src="{{personaje.image}}" class="card-img-top" alt="{{personaje.name}}">
+            <div class="card-body">
+                <h5 class="card-title">{{personaje.name}}</h5>
+                <p class="card-text">
+                    <ul>
+                        <li>{{personaje.status}}</li>
+                        <li>{{personaje.species}}</li>
+                        <li>{{personaje.gender}}</li>
+                    </ul>
+                </p>
+                <a href="{{personaje.image}}" class="btn btn-primary">Ver Imagen</a>
+            </div>  
+        </div>
+    {% endfor %}
+</div>
+
+
+{% endblock content %}
